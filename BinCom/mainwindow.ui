@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>639</width>
-    <height>416</height>
+    <height>463</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,19 +15,21 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="1" colspan="2">
-     <widget class="QPlainTextEdit" name="plainTextEdit"/>
-    </item>
-    <item row="1" column="5" colspan="2">
-     <widget class="QPlainTextEdit" name="plainTextEdit_2"/>
-    </item>
     <item row="0" column="1">
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
     </item>
-    <item row="0" column="5">
-     <widget class="QLineEdit" name="lineEdit_2"/>
+    <item row="0" column="4">
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
     </item>
-    <item row="0" column="4" rowspan="2">
+    <item row="0" column="3" rowspan="2">
      <widget class="Line" name="line">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -45,7 +47,20 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="6">
+    <item row="2" column="1" colspan="4">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <widget class="QTextBrowser" name="textBrowser"/>
+    </item>
+    <item row="1" column="4" colspan="2">
+     <widget class="QTextBrowser" name="textBrowser_2"/>
+    </item>
+    <item row="0" column="5">
      <widget class="QPushButton" name="pushButton_2">
       <property name="text">
        <string/>
@@ -53,6 +68,32 @@
       <property name="icon">
        <iconset>
         <normaloff>Mopen.ico</normaloff>Mopen.ico</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QPushButton" name="btn_save">
+      <property name="maximumSize">
+       <size>
+        <width>28</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>save.ico</normaloff>save.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
